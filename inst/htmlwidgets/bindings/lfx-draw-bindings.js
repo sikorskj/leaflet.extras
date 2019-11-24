@@ -84,7 +84,7 @@ LeafletWidget.methods.addDrawToolbar = function(targetLayerId, targetGroup, opti
 
     map.on(L.Draw.Event.CREATED, function (e) {
       if (options.draw.singleFeature){
-        if (editableFeatureGroup.getLayers().length > 0) {
+        if (editableFeatureGroup.getLayers().length > 1) {
           editableFeatureGroup.clearLayers();
         }
       }
